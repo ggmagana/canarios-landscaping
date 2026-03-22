@@ -10,5 +10,7 @@
   "request_quote": "Solicitar Cotización",
   "about_title": "Sobre Nosotros",
   "about_text": "Ofrecemos servicios de jardinería de alta calidad.",
-  "service_description": "Servicio profesional con resultados de alta calidad"
+  "service_description": "Servicio profesional con resultados de alta calidad",
+  "message_sent_success": "Mensaje Enviado",
+  "error_sending_message": "Error enviando Mensaje"
 }

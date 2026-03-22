@@ -10,5 +10,7 @@
     "request_quote": "Request a Quote",
     "about_title": "About Us",
     "about_text": "We provide high-quality landscaping services.",
-    "service_description": "Professional service with high-quality results"
+    "service_description": "Professional service with high-quality results",
+    "message_sent_success": "Message sent",
+    "error_sending_message": "Error sending message"
   }

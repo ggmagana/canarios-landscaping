@@ -6,12 +6,12 @@ export default function QuoteDebug() {
   const { t } = useTranslation();
   const form = useRef();
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(null); // null=no msg, true=success, false=error
-  const [errorMessage, setErrorMessage] = useState(""); // detailed error
+  const [success, setSuccess] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
 
   // Initialize EmailJS once
   useEffect(() => {
-    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "mpotP37v_kru90-Q_";
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     console.log("Initializing EmailJS with public key:", PUBLIC_KEY);
     emailjs.init(PUBLIC_KEY);
   }, []);
@@ -22,12 +22,8 @@ export default function QuoteDebug() {
     setSuccess(null);
     setErrorMessage("");
 
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_6nwi9qk";
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_hc6qi4h";
-
-    console.log("Sending email with:");
-    console.log("SERVICE_ID:", SERVICE_ID);
-    console.log("TEMPLATE_ID:", TEMPLATE_ID);
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 
     // Log form data
     const formData = new FormData(form.current);
