@@ -1,7 +1,14 @@
 {
-    "hero_title": "Transform Your Outdoor Space with Canario's Landscaping",
+    "hero_title": "Transform Your Outdoor Space With Canario's Landscaping",
     "hero_sub": "Professional landscaping you can trust",
+    "get_quote": "Get Free Quote",
     "services_title": "Our Services",
-    "services_list": "Mulching, edging, flower planting, trimming, seasonal cleanup",
-    "contact": "Contact Us"
+    "contact_title": "Contact Us",
+    "name": "Name",
+    "phone": "Phone",
+    "message": "Project Details",
+    "request_quote": "Request a Quote",
+    "about_title": "About Us",
+    "about_text": "We provide high-quality landscaping services.",
+    "service_description": "Professional service with high-quality results"
   }

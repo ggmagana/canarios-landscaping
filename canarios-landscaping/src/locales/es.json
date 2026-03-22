@@ -1,7 +1,14 @@
 {
-    "hero_title": "Transforma Tu Espacio Exterior con Canario's Landscaping",
-    "hero_sub": "Jardinería profesional en la que puedes confiar",
-    "services_title": "Nuestros Servicios",
-    "services_list": "Mulching, bordes, siembra de flores, poda, limpieza de temporada",
-    "contact": "Contáctanos"
-  }
+  "hero_title": "Transforma Tu Espacio Exterior con Canario's Landscaping",
+  "hero_sub": "Jardinería profesional en la que puedes confiar",
+  "get_quote": "Cotización Gratis",
+  "services_title": "Nuestros Servicios",
+  "contact_title": "Contáctanos",
+  "name": "Nombre",
+  "phone": "Teléfono",
+  "message": "Detalles del proyecto",
+  "request_quote": "Solicitar Cotización",
+  "about_title": "Sobre Nosotros",
+  "about_text": "Ofrecemos servicios de jardinería de alta calidad.",
+  "service_description": "Servicio profesional con resultados de alta calidad"
+}

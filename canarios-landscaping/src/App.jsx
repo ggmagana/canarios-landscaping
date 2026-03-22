@@ -1,28 +1,27 @@
 import { useTranslation } from "react-i18next";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
+import { Routes, Route } from "react-router-dom";
+import LanguageToggle from "./components/LanguageToggle";
+
+
+import Home from "./pages/Home";
+import Quote from "./pages/Quote";
+import ServiceDetail from "./pages/ServiceDetail";
 
 function App() {
-  const { t, i18n } = useTranslation();
-
-  const toggleLang = () => {
-    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
-  };
+  const { i18n } = useTranslation();
 
   return (
-    <div>
-      <button 
-        onClick={toggleLang}
-        className="fixed top-5 right-5 bg-green-700 text-white px-4 py-2 rounded"
-      >
-        {i18n.language === "en" ? "ES" : "EN"}
-      </button>
+    <>
+      {/* Language Toggle */}
+      <LanguageToggle />
 
-      <Hero t={t} />
-      <Services t={t} />
-      <Contact t={t} />
-    </div>
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="/service/:name" element={<ServiceDetail />} />
+      </Routes>
+    </>
   );
 }
 
