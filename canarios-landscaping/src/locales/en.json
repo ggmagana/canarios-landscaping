@@ -1,16 +1,41 @@
 {
-    "hero_title": "Transform Your Outdoor Space With Canario's Landscaping",
-    "hero_sub": "Professional landscaping you can trust",
-    "get_quote": "Get Free Quote",
-    "services_title": "Our Services",
-    "contact_title": "Contact Us",
-    "name": "Name",
-    "phone": "Phone",
-    "message": "Project Details",
-    "request_quote": "Request a Quote",
-    "about_title": "About Us",
-    "about_text": "We provide high-quality landscaping services.",
-    "service_description": "Professional service with high-quality results",
-    "message_sent_success": "Message sent",
-    "error_sending_message": "Error sending message"
-  }
+  "hero_title": "Transform Your Outdoor Space With Canario's Landscaping",
+  "hero_sub": "Professional landscaping you can trust",
+  "get_quote": "Get Free Quote",
+  "services_title": "Our Services",
+  "contact_title": "Contact Us",
+  "name": "Name",
+  "phone": "Phone",
+  "message": "Project Details",
+  "request_quote": "Request a Quote",
+  "about_title": "About Us",
+  "about_text": "We provide high-quality landscaping services.",
+  "service_description": "Professional service with high-quality results",
+  "message_sent_success": "Message sent",
+  "error_sending_message": "Error sending message",
+  "our_work_title": "Our Work",
+  "see_full_gallery": "See Full Gallery",
+  
+  "services": [
+    {
+      "name": "Mulching",
+      "description": "Mulching to protect and enrich your garden beds."
+    },
+    {
+      "name": "Edging",
+      "description": "Clean and precise lawn and garden edges."
+    },
+    {
+      "name": "Flower Planting",
+      "description": "Beautiful seasonal flowers for all your outdoor spaces."
+    },
+    {
+      "name": "Light Trimming and Pruning",
+      "description": "Maintain trees and shrubs healthy and neat."
+    },
+    {
+      "name": "Other Duties / Spring & Fall Cleanup",
+      "description": "Additional services as needed for seasonal cleanup."
+    }
+  ]
+}

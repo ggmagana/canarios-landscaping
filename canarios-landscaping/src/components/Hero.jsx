@@ -28,7 +28,7 @@ export default function Hero({ t }) {
 
             <button 
             onClick={() => navigate("/quote")}
-            className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl text-lg"
+            className="bg-green-800 hover:bg-green-800 px-6 py-3 rounded-xl text-lg"
             >
             {t("get_quote")}
             </button>

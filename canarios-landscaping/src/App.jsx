@@ -4,7 +4,7 @@ import LanguageToggle from "./components/LanguageToggle";
 
 import Home from "./pages/Home";
 import Quote from "./pages/Quote";
-import ServiceDetail from "./pages/ServiceDetail";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const { i18n } = useTranslation();
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quote" element={<Quote />} />
-        <Route path="/service/:name" element={<ServiceDetail />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </>
   );

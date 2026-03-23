@@ -1,36 +1,29 @@
-import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-export default function Services({ t }) {
-  const navigate = useNavigate();
-  const services = [
-    "Mulching",
-    "Edging",
-    "Flower Planting",
-    "Light Trimming and Pruning",
-    "Seasonal Cleanup",
-    "Other duties as desired"
-  ];
-  
+export default function ServicesOverview() {
+  const { t } = useTranslation();
+
+  const services = t("services", { returnObjects: true }); // returns array from JSON
+
   return (
-    <section className="py-20 bg-gray-100 text-center">
-      <h2 className="text-4xl font-bold mb-12 text-green-800">
+    <div className="p-10 bg-gray-50">
+      <h1 className="text-4xl font-bold mb-8 text-center text-green-800">
         {t("services_title")}
-      </h2>
+      </h1>
 
-      <div className="grid md:grid-cols-3 gap-8 px-6 md:px-20">
-        {services.map((s, i) => (
-          <div 
-            key={i}
-            onClick={() => navigate(`/service/${s}`)}
-            className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2"
+      <div className="flex gap-6 overflow-x-auto py-4">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-72 p-6 bg-gradient-to-br from-white to-green-50 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
-            <h3 className="text-xl font-semibold text-green-700">{s}</h3>
-            <p className="text-gray-500 mt-2 text-sm">
-            <p>{t("service_description")}</p>
-            </p>
+            <h2 className="text-2xl font-semibold mb-2 text-center text-green-800">
+              {service.name}
+            </h2>
+            <p className="text-gray-600 text-center">{service.description}</p>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
